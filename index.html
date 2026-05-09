@@ -2,27 +2,57 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>感想フォーム</title>
+
+  <style>
+    body{
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    .manga-image{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .page-title{
+      margin: 20px 0 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
 <h1>感想フォームテスト</h1>
 
-<p>ページ1</p>
+<div class="page-title">ページ1</div>
 
-<img src="page1.jpg" width="600">
+<img src="page1.jpg" class="manga-image">
 
 <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="ff9ad4e1-37d9-46cf-b59d-2718e22e3123"
-  data-page-id="{{ PAGE_ID }}"
-  data-page-url="{{ PAGE_URL }}"
-  data-page-title="{{ PAGE_TITLE }}"
+  data-page-id="page1"
+  data-page-url="https://nikka-narci.github.io/nikka-doujin/"
+  data-page-title="page1"
   data-hide-emails="true"
-  data-lang="ja"
-></div>
+  data-lang="ja">
+</div>
+
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-  
+
 </body>
 </html>
